@@ -15,8 +15,8 @@ class FeatureComponent extends Component {
                             config.features.map((conf, idx) => {
                                 const { img, ftitle, fcontent} = conf
                                 return (
-                                    <div className="col-xs-12 col-sm-3 text-center" key={idx}>
-                                        <div className="wrapper-section wow fadeInUp animated" >
+                                    <div className="col-xs-12 col-sm-4 text-center" key={idx}>
+                                        <div className="wrapper-section wow fadeInUp animated" >                                            
                                             <div className="img">
                                                 <img src={img}/>
                                             </div>

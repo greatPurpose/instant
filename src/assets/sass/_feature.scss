@@ -120,6 +120,15 @@
 	margin-bottom: 21px;
 	box-shadow: 0 0 10px 1px rgba(220, 220, 220, 0.4);
 	min-height: 265px;
+	visibility: visible; 
+	animation-delay: 0.5s; 
+	animation-name: fadeInUp;
+	.img {
+		img {
+			height: 58px;
+		}
+	}
+
 	.content {
 		h3 {
 			margin-top: 28px;
