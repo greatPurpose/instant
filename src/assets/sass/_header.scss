@@ -1,0 +1,191 @@
+#header-page {
+	.content-head {
+		background: url(../images/bg-header.jpg) no-repeat left bottom;
+		padding-bottom: 65px;
+		padding: 0 45px;
+		background-size: cover;
+	}
+}
+
+.main-logo {
+	padding-bottom: 535px;
+	text-align: left;
+	img {
+		max-height: 35px;
+		width: auto;
+	}
+	p {
+		color: #121212;
+	}
+	h1 {
+		margin: 0;
+		padding: 60px 0 182px;
+		a {
+			display: inline-block;
+			max-width: 300px;
+		}
+		.button {
+			a {
+				display: inline-block;
+			}
+		}
+	}
+	h2 {
+		color: #0a0a0a;
+		margin: 0;
+		font-size: 45px;
+		font-family: 'Prata', serif;
+		letter-spacing: 3.9px;
+		padding-bottom: 20px;
+		line-height: 52px;
+	}
+	.subtitle {
+		color: #4a5560;
+		font-size: 21px;
+		font-family: 'Muli', sans-serif;
+		letter-spacing: 1.625px;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	.button {
+		a {
+			margin-top: -57px;
+			float: right;
+			padding: 0 36px;
+			display: inline-block;
+			background: #e7b053;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-family: Muli;
+			height: 50px;
+			line-height: 50px;
+			color: #fff;
+		}
+		&:hover {
+			a {
+				&:hover {
+					background: #e19b26;
+				}
+			}
+		}
+	}
+	.button2 {
+		a {
+			margin-top: 50px;
+			padding: 0 26px;
+			display: inline-block;
+			background: #e7b053;
+			text-transform: uppercase;
+			font-weight: 700;
+			height: 50px;
+			line-height: 50px;
+			letter-spacing: 2px;
+			color: #fff;
+		}
+		&:hover {
+			a {
+				&:hover {
+					background: #e19b26;
+				}
+			}
+		}
+	}
+	.title-head {
+		padding-top: 400px;
+		color: #fff;
+		font-size: 35px;
+		line-height: 35px;
+		margin-bottom: 53px;
+		text-transform: uppercase;
+	}
+	>p {
+		font-size: 20px;
+		line-height: 28px;
+	}
+}
+
+@media (min-width: 767px) {
+	.title-left {
+		width: 50%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.title-left {
+		width: 80%;
+	}
+}
+
+
+@media (max-width: 991px) {
+	.title-left {
+		width: 100%;
+	}
+	.main-logo {
+		padding-bottom: 500px;
+		h2 {
+			font-size: 35px;
+		}
+		.title-head {
+			padding-top: 160px;
+		}
+	}
+	#header-page {
+		.content-head {
+			padding: 0;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.title-left {
+		text-align: center;
+	}
+	.main-logo {
+		padding-bottom: 200px;
+		h1 {
+			text-align: center;
+			padding-bottom: 65px;
+			>a {
+				margin-top: 0;
+				float: unset !important;
+			}
+			.button {
+				>a {
+					margin-bottom: 0;
+					margin-top: 70px;
+					float: unset !important;
+				}
+			}
+		}
+		h2 {
+			font-size: 30px;
+		}
+		.subtitle {
+			font-size: 20px;
+		}
+		.button {
+			float: unset;
+		}
+		.title-head {
+			font-size: 30px;
+			line-height: 35px;
+		}
+    }
+}
+
+@media (max-width: 1199px) {
+	.main-logo {
+		h1 {
+			padding-bottom: 160px;
+		}
+	}
+}
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+	#header-page {
+		.content-head {
+			background: url(../images/bg-header.jpg) no-repeat 49% bottom;
+		}
+	}
+}
