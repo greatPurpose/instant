@@ -1,12 +1,13 @@
 #footer-page {
-	padding-top: 535px;
-	padding-bottom: 27px;
-	background: url(../images/bg-footer.png) no-repeat bottom;
+	padding-top: 650px;
+	padding-bottom: 27px;	
+	background: url(../images/bg.png) no-repeat;
+	background-position: top center;
+	background-size: cover;
+	
 }
 .footer-page {
-	img {
-		max-height: 50px;
-	}
+
 	.title-footer {
 		margin-top: 170px;
 		font-weight: 700;

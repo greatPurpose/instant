@@ -1,12 +1,12 @@
 module.exports = {
-  siteTitle: 'Instant', // <title>
+  siteTitle: 'Instant Touch', // <title>
   manifestName: 'InstantTouch',
   manifestShortName: 'Instant', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
+  manifestIcon: 'src/assets/imgages/logo.png',
   pathPrefix: `/instant/`, // This path is subpath of your hosting https://domain/portfolio
   
 
