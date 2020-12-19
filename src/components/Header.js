@@ -10,6 +10,7 @@ class HeaderComponent extends Component {
                         <div className="main-logo">
                             <h1>
                                 <a href="#" target="_blank"><img src={require('../assets/images/logo.png')}/></a>
+                                
                             </h1>
                             <div className="title-left">
                                 <h2>Beautiful Software </h2>

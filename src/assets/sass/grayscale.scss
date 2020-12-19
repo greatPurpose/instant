@@ -3,12 +3,6 @@
 @import '../css/animation.css';
 @import '../css/webfont.css';
 
-@import 'header.scss';
-@import 'variables.scss';
-@import 'feature.scss';
-@import 'footer.scss';
-
-
 @media (min-width: 1800px) {
 	.container {
 		width: 1800px;
@@ -83,3 +77,10 @@ a.button2 {
 	transition: all 0.4s ease 0s;
 	margin-bottom: 20px;
 }
+
+
+@import 'header.scss';
+@import 'variables.scss';
+@import 'feature.scss';
+@import 'footer.scss';
+

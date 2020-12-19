@@ -1,15 +1,26 @@
 #footer-page {
-	padding-top: 650px;
+	
+	padding-top: 520px;
 	padding-bottom: 27px;	
 	background: url(../images/bg.png) no-repeat;
 	background-position: top center;
 	background-size: cover;
 	
+	@media ( max-width: 768px) {
+		padding-top: 200px;		
+	}
+
+	@media (max-width: 1024px) and (min-width: 769px) {
+		padding-top: 300px;
+	}
+
+	@media (max-width: 1200px) and (min-width: 1025px) {
+		padding-top: 400px;
+	}
 }
 .footer-page {
 
 	.title-footer {
-		margin-top: 170px;
 		font-weight: 700;
 	}
 	.btn-link-ft {
@@ -36,17 +47,17 @@
 
 .title-footer {
 	font-size: 32px;
-	color: #4a5560;
+	color: #333456;
 	margin-bottom: 20px;
 }
 
 .copyright {
-	color: #4a5560;
+	color: #333456;
 	font-family: Muli, sans-serif;
 	a {
-		color: #e7b053;
+		color: #333456;
 		&:hover {
-			color: #121212;
+			color: #e7b053;
 		}
 	}
 }

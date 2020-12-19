@@ -1,6 +1,6 @@
 #header-page {
 	.content-head {
-		background: url(../images/bg-header.jpg) no-repeat left bottom;
+		background: url(../images/bg-header.jpg) no-repeat left top;
 		padding-bottom: 65px;
 		padding: 0 45px;
 		background-size: cover;
@@ -18,10 +18,10 @@
 	}
 	h1 {
 		margin: 0;
-		padding: 60px 0 182px;
+		padding: 60px 0 0;
 		a {
 			display: inline-block;
-			max-width: 300px;
+			max-width: 350px;
 		}
 		.button {
 			a {
@@ -32,7 +32,7 @@
 	h2 {
 		color: #0a0a0a;
 		margin: 0;
-		font-size: 45px;
+		font-size: 48px;
 		font-family: 'Prata', serif;
 		letter-spacing: 3.9px;
 		padding-bottom: 20px;
@@ -105,23 +105,15 @@
 
 @media (min-width: 767px) {
 	.title-left {
-		width: 50%;
-	}
-}
-
-@media (max-width: 1200px) {
-	.title-left {
-		width: 80%;
+		text-align: right;
 	}
 }
 
 
 @media (max-width: 991px) {
-	.title-left {
-		width: 100%;
-	}
+
 	.main-logo {
-		padding-bottom: 500px;
+		padding-bottom: 570px;
 		h2 {
 			font-size: 35px;
 		}
@@ -141,7 +133,7 @@
 		text-align: center;
 	}
 	.main-logo {
-		padding-bottom: 200px;
+		padding-bottom: 400px;
 		h1 {
 			text-align: center;
 			padding-bottom: 65px;
@@ -158,7 +150,7 @@
 			}
 		}
 		h2 {
-			font-size: 30px;
+			font-size: 35px;
 		}
 		.subtitle {
 			font-size: 20px;
@@ -176,7 +168,7 @@
 @media (max-width: 1199px) {
 	.main-logo {
 		h1 {
-			padding-bottom: 160px;
+			padding-bottom: 30px;
 		}
 	}
 }
