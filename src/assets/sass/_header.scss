@@ -1,6 +1,6 @@
 #header-page {
 	.content-head {
-		background: url(../images/bg-header.jpg) no-repeat left top;
+		background: url(../images/bg-header.jpg) no-repeat center center;
 		padding-bottom: 65px;
 		padding: 0 45px;
 		background-size: cover;
@@ -8,7 +8,7 @@
 }
 
 .main-logo {
-	padding-bottom: 535px;
+	padding-bottom: 600px;
 	text-align: left;
 	img {
 		width: auto;
@@ -113,7 +113,6 @@
 @media (max-width: 991px) {
 
 	.main-logo {
-		padding-bottom: 570px;
 		h2 {
 			font-size: 35px;
 		}
@@ -133,7 +132,6 @@
 		text-align: center;
 	}
 	.main-logo {
-		padding-bottom: 400px;
 		h1 {
 			text-align: center;
 			padding-bottom: 65px;
