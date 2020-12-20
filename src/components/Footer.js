@@ -5,7 +5,7 @@ class FooterComponent extends Component {
     return (
       <div id="footer-page" className="footer-page">
         <div className="container text-center">			         
-          <h2 className="title-footer">Beautiful Software For Your Cosmetic Clinic</h2>
+          <h2 className="title-footer">Beautiful Software</h2>
           <div className="btn-link-ft">            
                 <a href="#" target="_blank">BOOK DEMO</a>
           </div>
