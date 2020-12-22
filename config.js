@@ -9,6 +9,11 @@ module.exports = {
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/instant/`, // This path is subpath of your hosting https://domain/portfolio
   
+  mainTitle:'Beautiful Software',
+  subTitle: 'FOR YOUR COSMETIC CLINIC',
+  btnTitle:'Book Demo',
+  copyRight: 'Instant Touch™ brought to you by Instant Consult™ 2018-2021',
+  policyLink: 'https://instantconsult.s3.amazonaws.com/undefined/Document_2QbQFVdoc7P2xT2.pdf',
 
   // features
   features: [

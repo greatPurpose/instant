@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import config from '../../config';
+import logo from '../assets/images/logo.png';
+import comgraphic from '../assets/images/bg-computer.png';
 
 class HeaderComponent extends Component {
     render() {
@@ -9,13 +11,16 @@ class HeaderComponent extends Component {
                     <div className="container">
                         <div className="main-logo">
                             <h1>
-                                <a href="#" target="_blank"><img src={require('../assets/images/logo.png')}/></a>
+                                <a href="#" target="_blank"><img src={logo}/></a>
                                 
                             </h1>
                             <div className="title-left">
-                                <h2>Beautiful Software </h2>
-                                <div className="subtitle">FOR YOUR COSMETIC CLINIC</div>
-                                <div className="button2"><a href="#">Book Demo</a></div>
+                                <h2>{config.mainTitle}</h2>
+                                <div className="subtitle">{config.subTitle}</div>
+                                <div className="button2"><a href="#">{config.btnTitle}</a></div>
+                            </div>
+                            <div className="mobile-header-gh">
+                                <img src={comgraphic}/>
                             </div>
                         </div>
                     </div>  			

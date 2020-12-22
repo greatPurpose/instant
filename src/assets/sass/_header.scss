@@ -5,11 +5,13 @@
 		padding: 0 45px;
 		background-size: cover;
 	}
+	
 }
 
 .main-logo {
 	padding-bottom: 600px;
-	text-align: left;
+
+	text-align: left;	
 	img {
 		width: auto;
 	}
@@ -41,6 +43,11 @@
 		padding-bottom: 20px;
 		line-height: 52px;
 	}
+
+	.mobile-header-gh {
+		display: none;		
+	}
+
 	.subtitle {
 		color: #4a5560;
 		font-size: 21px;
@@ -131,10 +138,17 @@
 }
 
 @media (max-width: 767px) {
+	#header-page {
+		.content-head {
+			background: url(../images/bg-head.jpg) no-repeat top center;
+		}
+	}
+
 	.title-left {
 		text-align: center;
 	}
 	.main-logo {
+		padding-bottom: 100px;
 		h1 {
 			text-align: center;
 			padding-bottom: 65px;
@@ -162,6 +176,10 @@
 		.title-head {
 			font-size: 30px;
 			line-height: 35px;
+		}		
+		.mobile-header-gh {		
+			padding-top: 67px;
+			display: block;		
 		}
     }
 }
