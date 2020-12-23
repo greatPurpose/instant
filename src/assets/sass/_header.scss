@@ -6,6 +6,9 @@
 		background-size: cover;
 	}
 	
+	.mobile-header-gh {
+		display: none;		
+	}
 }
 
 .main-logo {
@@ -42,10 +45,6 @@
 		letter-spacing: 3.9px;
 		padding-bottom: 20px;
 		line-height: 52px;
-	}
-
-	.mobile-header-gh {
-		display: none;		
 	}
 
 	.subtitle {
@@ -113,6 +112,8 @@
 	}
 }
 
+
+
 @media (min-width: 767px) {
 	.title-left {
 		text-align: right;
@@ -138,13 +139,20 @@
 }
 
 @media (max-width: 767px) {
-
+	#header-page {
+		.content-head {
+			background: #e9e9e9;
+		}
+		.mobile-header-gh {		
+			display: block;		
+		}
+	}
 
 	.title-left {
 		text-align: center;
 	}
 	.main-logo {
-		padding-bottom: 40px;
+		padding-bottom: 0px;
 		h1 {
 			text-align: center;
 			padding-bottom: 65px;
@@ -172,12 +180,9 @@
 		.title-head {
 			font-size: 30px;
 			line-height: 35px;
-		}		
-		.mobile-header-gh {		
-			padding-top: 67px;
-			display: block;		
-		}
-    }
+		}	
+	}
+
 }
 
 @media (max-width: 1199px) {

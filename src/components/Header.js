@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import config from '../../config';
 import logo from '../assets/images/logo.png';
-import comgraphic from '../assets/images/bg-computer.png';
+import comgraphic from '../assets/images/bg-header.jpg';
 
 class HeaderComponent extends Component {
     render() {
@@ -18,10 +18,12 @@ class HeaderComponent extends Component {
                                 <h2>{config.mainTitle}</h2>
                                 <div className="subtitle">{config.subTitle}</div>
                                 <div className="button2"><a href="#">{config.btnTitle}</a></div>
-                            </div>
-                            
+                            </div>                            
                         </div>
                     </div>  			
+                </div>
+                <div className="mobile-header-gh">
+                    <img src={comgraphic}/>
                 </div>
             </div>
         );
