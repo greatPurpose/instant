@@ -19,9 +19,7 @@ class HeaderComponent extends Component {
                                 <div className="subtitle">{config.subTitle}</div>
                                 <div className="button2"><a href="#">{config.btnTitle}</a></div>
                             </div>
-                            <div className="mobile-header-gh">
-                                <img src={comgraphic}/>
-                            </div>
+                            
                         </div>
                     </div>  			
                 </div>
