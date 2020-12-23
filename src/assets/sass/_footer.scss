@@ -7,16 +7,15 @@
 	.mobile-footer-gh {
 		display: none;
 	}
+	.mobile-footer-cosmetic{
+		display: none;
+	}
 	
 }
 .footer-page {
 
 	.title-footer {
-		font-weight: 500;
-
-		.mobile-footer-cosmetic{
-			display: none;
-		}
+		font-weight: 500;		
 	}
 	.btn-link-ft {
 		a {
@@ -69,22 +68,16 @@
 			img {
 				width: 90%;
 			}
-		}
-		.title-footer {
-			.mobile-footer-cosmetic{
-				display: block;
-				position:absolute;
-				right: -100px;
-			}
 		}		
+		.mobile-footer-cosmetic{
+			display: block;				
+			width: 80%;
+			margin-left: 10%;
+		}	
 
 		.copyright {
 			font-size: 12px;
 		}
-		.btn-link-ft{
-			a{
-				margin-top: 125px;
-			}
-		}
+		
 	}	
 }
