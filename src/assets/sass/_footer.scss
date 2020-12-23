@@ -7,11 +7,16 @@
 	.mobile-footer-gh {
 		display: none;
 	}
+	
 }
 .footer-page {
 
 	.title-footer {
 		font-weight: 500;
+
+		.mobile-footer-cosmetic{
+			display: none;
+		}
 	}
 	.btn-link-ft {
 		a {
@@ -65,8 +70,21 @@
 				width: 90%;
 			}
 		}
+		.title-footer {
+			.mobile-footer-cosmetic{
+				display: block;
+				position:absolute;
+				right: -100px;
+			}
+		}		
+
 		.copyright {
 			font-size: 12px;
+		}
+		.btn-link-ft{
+			a{
+				margin-top: 125px;
+			}
 		}
 	}	
 }

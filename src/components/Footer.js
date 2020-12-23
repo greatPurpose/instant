@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import comgraphic from '../assets/images/bg-computer.png';
+import footerSVG from '../assets/images/footer-svg.svg';
 
 
 class FooterComponent extends Component {
@@ -9,9 +10,9 @@ class FooterComponent extends Component {
       <div id="footer-page" className="footer-page">
         <div className="container text-center">			
           <div className="mobile-footer-gh"> 
-            <img src={comgraphic}/>
+            <img src={comgraphic}/>            
           </div>         
-          <h2 className="title-footer">{config.mainTitle}</h2>
+          <h2 className="title-footer">{config.mainTitle}<img className="mobile-footer-cosmetic" src={footerSVG}/></h2>
           <div className="btn-link-ft">            
                 <a href="#" target="_blank">{config.btnTitle}</a>
           </div>
