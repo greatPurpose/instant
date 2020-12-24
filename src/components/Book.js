@@ -88,7 +88,14 @@ class BookingComponent extends Component {
           if (errors.length > 0) {
             return false;
           } else {
-            alert("everything good. submit form!");
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({
+                  "form-name": event.target.getAttribute("name"),
+                  ...name
+                })
+              }).then(() => navigate("/")).catch(error=>{return flase})
           }
 
     }
@@ -101,7 +108,7 @@ class BookingComponent extends Component {
             style={customStyles}
                 isOpen={this.state.showModal}
                 >
-             <form name="contact-form" className="book-modal" method="post" data-netlify="true"> 
+             <form name="book-demo" className="book-modal" method="post" data-netlify="true" data-netlify-honeypot="bot-field"> 
                 <h3>{config.btnTitle}</h3>
                 <div className="form-group">
                     <label>Name</label>
