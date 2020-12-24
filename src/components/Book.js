@@ -94,9 +94,10 @@ class BookingComponent extends Component {
           if (errors.length > 0) {
             return false;
           } else {
-            fetch("https://netlify-express-email.netlify.app/book", {
+            fetch("https://netlify-express-email.netlify.app/book", {                
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                mode: 'no-cors',
                 body: encode({ "form-name": "book-demo", "from":"test1", "to": "test2", "message": 'message2' })
               })
             .then(() => {})
