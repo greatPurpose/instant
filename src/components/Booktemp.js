@@ -94,7 +94,7 @@ class BookingComponent extends Component {
           if (errors.length > 0) {
             return false;
           } else {
-            fetch("https://netlify-express-email.netlify.app/book", {                
+            fetch("http://localhost:3000/book", {                
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 mode: 'no-cors',
@@ -150,4 +150,3 @@ class BookingComponent extends Component {
     }
   }
 
-export default BookingComponent;

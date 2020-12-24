@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import config from '../../config';
 import {Link} from 'gatsby';
-import BookingComponent from './Book'
 import logo from '../assets/images/logo.png';
 import comgraphic from '../assets/images/bg-header.jpg';
 
@@ -13,13 +12,14 @@ class HeaderComponent extends Component {
                     <div className="container">
                         <div className="main-logo">
                             <h1>
-                                <Link to="/" target="_blank"><img src={logo}/></Link>
-                                
+                                <Link to="/" target="_blank"><img src={logo}/></Link>                                
                             </h1>
                             <div className="title-left">
                                 <h2>{config.mainTitle}</h2>
                                 <div className="subtitle">{config.subTitle}</div>
-                                <BookingComponent />
+                                <div className="btn-link-ft">
+                                    <Link to="/book" >{config.btnTitle}</Link>
+                                </div>
                             </div>                            
                         </div>
                     </div>  			

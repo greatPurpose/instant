@@ -1,66 +1,161 @@
-.book-modal {
-    background-color: #fff;
-    padding-bottom: 20px;
-    h3 {
-        font-weight: 500;
-        text-transform: uppercase;
-        text-align: center;
-        margin: auto;
-        padding-bottom: 15px;
-        font-size: 32px;
-        color: #080808;
+.booking-page {
+    .btn-link-ft {
+        display: none;
     }
 
-    label {
-        font-family: Muli,sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        color: #080808;
-    }
+    .contact-main {
 
-    input, textarea {
-        color: -internal-light-dark(black, white);
-        &::selection {
-            color: #fff;
-            background:#e7b053;
+        form {
+            width: 69.75%;
+            max-width: 837px;
+            margin: auto;
         }
-    }
 
-    .form-control {
-        &.is-invalid {
-            border-color: #dc3545;
-            padding-right: calc(1.5em + .75rem);
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
-            background-repeat: no-repeat;
-            background-position: center right calc(.375em + .1875rem);
-            background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+        h1 {
+            margin: 0;
+            padding: 60px 0 0;
+            text-align: left;
+            margin-bottom: 30px;
+    
+            a {
+                display: inline-block;
+                max-width: 300px;
+            }
+
         }
-    }
 
-    .inline-errormsg {
-        color: red;
-        font-size: 12px;
-    }
+        .contact-us-form {
+            
 
-    button {
-        outline: none;
-        border: none;
+            input {
+                height: 45px;
+                line-height: 45px;
+                margin-bottom: 25px;
+                width: 100%;
+                padding: 10px 20px;
+                font-weight: 400;
+                color: #666;
+                background: #f5f5f5;
+                border: none;
+                outline: none;
+
+                &.is-invalid {
+                    border-color: #dc3545;
+                    padding-right: calc(1.5em + .75rem);
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+                    background-repeat: no-repeat;
+                    background-position: center right calc(.375em + .1875rem);
+                    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+                }
+                &::selection {
+                    color: #fff;
+                    background:#e7b053;
+                }
+            }
+            input[type=submit] {
+                font-family: "Muli",Sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                height: 45px;
+                line-height: 45px !important;
+                letter-spacing: 1.6px;
+                color: #fff;
+                background-color: #e7b053;
+                border: none;
+                padding: 0 55px !important;
+                transition: all .3s ease;
+                cursor: pointer;
+                width: 100%;
+                border-radius: 0;
+                &:hover {
+                    background-color: #e19b26; 
+                }
+            }
+            textarea {
+                width: 100%;
+                max-height: 210px;
+                padding: 10px 20px;
+                font-weight: 400;
+                margin-bottom: 35px;
+                color: #909090;
+                background: #f5f5f5;
+                border: none;
+                outline: none;
+                &::selection {
+                    color: #fff;
+                    background:#e7b053;
+                }
+            }
+            .title {
+                color: #080808;
+                font-family: Prata,serif;
+                font-weight: 700;
+                font-size: 34px;
+                position: relative;
+                margin-bottom: 30px;
+            }
+            .form-control-wrap{
+                position: relative;
+            }
+            .wpcf7-text {
+                &::placeholder {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+            .wpcf7-textarea {
+                &::placeholder {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+
+            .wpcf7-submit {
+                &:disabled {
+                    cursor: not-allowed;
+                }
+            }
+            .inline-errormsg {
+                color: red;
+                font-size: 12px;
+            }
+            .wpcf7-response-output {
+                border-color: #ffb900;
+                margin: 2em .5em 1em;
+                padding: .2em 1em;
+                border: 2px solid #ffb900;
+                display: block;
+                &::selection {
+                    color: #fff;
+                    background: #e7b053;
+                }
+            }
+            .button {
+                display: inline-block;
+            }
+        }
     }
 }
 
-.redirect-div{
-    display: flex;
-    span {
-        cursor: pointer;
-        font-size: 14px;
-        line-height: 15px;
-        margin: auto;
-        color: #909090;
-        z-index: 9;
-        &:hover {
-            background: #fff;
-            color: #e7b053;
-            border-color: #e7b053;
+@media (max-width: 767px) {
+    .booking-page {
+        .contact-main {
+            padding-bottom: 0px;
+            h1 {
+                text-align: center;
+                padding-bottom: 65px;
+                a {
+                    margin-top: 0;
+                    float: unset !important;
+                }  
+            }
+
+            form {
+                width: 100%;
+                padding: 0 15px;
+            }
+    
         }
     }
 }
