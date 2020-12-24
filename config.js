@@ -13,6 +13,7 @@ module.exports = {
   subTitle: 'FOR YOUR COSMETIC CLINIC',
   btnTitle:'Book Demo',
   copyRight: 'Instant Touch™ brought to you by Instant Consult™ 2018-2021',
+  bottomTitle: 'Redirecting you to our homepage',
   policyLink: 'https://instantconsult.s3.amazonaws.com/undefined/Document_2QbQFVdoc7P2xT2.pdf',
 
   // features
