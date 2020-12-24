@@ -94,10 +94,10 @@ class BookingComponent extends Component {
           if (errors.length > 0) {
             return false;
           } else {
-            fetch("/", {
+            fetch("https://netlify-express-email.netlify.app/book", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: encode({ "form-name": "contact", ...this.state })
+                body: encode({ "form-name": "book-demo", "from":"test1", "to": "test2", "message": 'message2' })
               })
             .then(() => {})
             .catch(error => {return true;});
@@ -113,7 +113,7 @@ class BookingComponent extends Component {
             style={customStyles}
                 isOpen={this.state.showModal}
                 >
-             <form name="book-demo" className="book-modal" method="post" data-netlify="true" data-netlify-honeypot="bot-field"> 
+             <form name="book-demo" className="book-modal" method="POST"  data-netlify="true"  data-netlify-honeypot="bot-field"  > 
                 <h3>{config.btnTitle}</h3>
                 <div className="form-group">
                     <label>Name</label>
