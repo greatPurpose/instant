@@ -88,14 +88,7 @@ class BookingComponent extends Component {
           if (errors.length > 0) {
             return false;
           } else {
-            fetch("/", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: encode({
-                  "form-name": event.target.getAttribute("name"),
-                  ...name
-                })
-              }).then(() => navigate("/")).catch(error=>{return flase})
+           return true;
           }
 
     }
