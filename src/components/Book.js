@@ -22,6 +22,12 @@ const customStyles = {
     }
   };
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
 class BookingComponent extends Component { 
     constructor () {
         super();
@@ -88,7 +94,13 @@ class BookingComponent extends Component {
           if (errors.length > 0) {
             return false;
           } else {
-           return true;
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact", ...this.state })
+              })
+            .then(() => {})
+            .catch(error => {return true;});
           }
 
     }
