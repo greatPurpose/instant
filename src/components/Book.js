@@ -101,7 +101,7 @@ class BookingComponent extends Component {
             style={customStyles}
                 isOpen={this.state.showModal}
                 >
-             <form name="contact-form" className="book-modal" method="post" netlify> 
+             <form name="contact-form" className="book-modal" method="post" data-netlify="true"> 
                 <h3>{config.btnTitle}</h3>
                 <div className="form-group">
                     <label>Name</label>
