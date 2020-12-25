@@ -4,80 +4,79 @@
 @import '../css/webfont.css';
 
 @media (min-width: 1800px) {
-	.container {
-		width: 1800px;
-	}
+  .container {
+    width: 1800px;
+  }
 }
 
 .wrapper {
-	h6 {
-		font-family: 'Prata', serif;
-	}
-	h5 {
-		font-family: 'Prata', serif;
-	}
-	h4 {
-		font-family: 'Prata', serif;
-	}
-	h2 {
-		font-family: 'Prata', serif;
-	}
-	h1 {
-		font-family: 'Prata', serif;
-	}
-	color: #121212;
-	font-family: 'Muli', sans-serif;
-	a {
-		text-decoration: none;
-		font-size: 14px;
-		color: #121212;
-		&:hover {
-			outline: none;
-			text-decoration: none;
-			-webkit-transition: all .3s ease;
-			-moz-transition: all .3s ease;
-			-ms-transition: all .3s ease;
-			-o-transition: all .3s ease;
-			transition: all .3s ease;
-			color: #ffffff;
-		}
-		&:focus {
-			outline: none;
-			text-decoration: none;
-			-webkit-transition: all .3s ease;
-			-moz-transition: all .3s ease;
-			-ms-transition: all .3s ease;
-			-o-transition: all .3s ease;
-			transition: all .3s ease;
-			color: #ffffff;
-		}
-	}
-	li {
-		list-style: none;
-	}
-	ul {
-		padding: 0;
-		margin: 0;
-	}
-	img {
-		max-width: 100%;
-	}
+  h6 {
+    font-family: 'Prata', serif;
+  }
+  h5 {
+    font-family: 'Prata', serif;
+  }
+  h4 {
+    font-family: 'Prata', serif;
+  }
+  h2 {
+    font-family: 'Prata', serif;
+  }
+  h1 {
+    font-family: 'Prata', serif;
+  }
+  color: #121212;
+  font-family: 'Muli', sans-serif;
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #121212;
+    &:hover {
+      outline: none;
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      color: #ffffff;
+    }
+    &:focus {
+      outline: none;
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      color: #ffffff;
+    }
+  }
+  li {
+    list-style: none;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+  }
 }
 
 a.button2 {
-	text-transform: uppercase;
-	display: inline-block;
-	font-family: 'Muli';
-	font-size: 24px;
-	padding: 10px 30px;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	cursor: pointer;
-	transition: all 0.4s ease 0s;
-	margin-bottom: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: 'Muli';
+  font-size: 24px;
+  padding: 10px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+  margin-bottom: 20px;
 }
-
 
 @import 'header.scss';
 @import 'variables.scss';

@@ -66,7 +66,10 @@ class ContactComponent extends Component {
     return (
       <div className="notification">
         <span>Submitted Failed.</span>
-        <button className="wpcf7-submit-notification" onClick={this.handleCloseModal}>
+        <button
+          className="wpcf7-submit-notification"
+          onClick={this.handleCloseModal}
+        >
           Close
         </button>
       </div>
