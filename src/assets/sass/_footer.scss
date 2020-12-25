@@ -58,6 +58,32 @@
 	}
 }
 
+@media (max-width: 1400px) {
+	#footer-page {		
+		padding-top: 58px;		
+		background: url(../images/bg-footer-mobile.png) no-repeat top center;
+
+		.mobile-footer-gh {
+			display: block;
+			padding-bottom: 50px;
+
+			img {
+				width: 60%;
+			}
+		}		
+		.mobile-footer-cosmetic {
+			display: block;				
+			width: 50%;
+			margin-left: 25%;
+		}
+		.title-footer
+		{
+			margin-bottom: 0px;
+		}
+	}
+	
+}
+
 @media ( max-width: 767px) {	
 	#footer-page {		
 		padding-top: 58px;		
