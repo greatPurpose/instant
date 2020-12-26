@@ -10,16 +10,16 @@ class FooterComponent extends Component {
       <div id="footer-page" className="footer-page">
         <div className="container text-center">
           <div className="mobile-footer-gh">
-            <img src={comgraphic} />
+            <img src={comgraphic} alt=""/>
           </div>
           <h2 className="title-footer">{config.mainTitle}</h2>
-          <img className="mobile-footer-cosmetic" src={footerPNG} />
+          <img className="mobile-footer-cosmetic" src={footerPNG} alt=""/>
           <div className="btn-link-ft">
             <Link to="/book">{config.btnTitle}</Link>
           </div>
           <div className="copyright">
             {config.copyRight} |{' '}
-            <a href={config.policyLink} target="_blank">
+            <a href={config.policyLink} target="_blank" rel="noreferrer noopener">
               Privacy Policy
             </a>
           </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import config from '../../config';
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 import logo from '../assets/images/logo.png';
 import Modal from 'react-modal';
 
@@ -53,10 +53,10 @@ class ContactComponent extends Component {
   SuccessMsg = () => {
     return (
       <div className="notification">
-        <span>Submitted Successfully.</span>
-        <span>Redirecting you to the homepage.</span>
+        <h3 className="modal-title">Submitted Successfully</h3>
+        <span>Redirecting you to the homepage</span>
         <Link className="wpcf7-submit-notification" to="/">
-          Go To The Homepage
+          Go To Homepage
         </Link>
       </div>
     );
@@ -65,7 +65,7 @@ class ContactComponent extends Component {
   ErrorMsg = () => {
     return (
       <div className="notification">
-        <span>Submitted Failed.</span>
+        <h3 className="modal-title">Submitted Failed</h3>
         <button
           className="wpcf7-submit-notification"
           onClick={this.handleCloseModal}
@@ -121,6 +121,7 @@ class ContactComponent extends Component {
     if (errors.length > 0) {
       return false;
     } else {
+      /*
       fetch('https://email-sender-express.herokuapp.com/book', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -133,28 +134,32 @@ class ContactComponent extends Component {
         }),
       })
         .then(() => {
-          this.state.sendingerr = false;
+          this.setState({sendingerr: false});
           this.handleOpenModal();
         })
         .catch(error => {
-          this.state.sendingerr = true;
+          this.setState({sendingerr: true});
           this.handleOpenModal();
         });
+        */
+
+       this.setState({sendingerr: false});
+       this.handleOpenModal();
     }
   }
 
   render() {
     return (
-      <div className="contact-main">
+      <div className="contact-main">        
+        <form action="/" method="post" name="contact-form">
         <div className="header-line">
           <h1>
             <Link to="/" target="_blank">
-              <img src={logo} />
+              <img src={logo} alt=""/>
             </Link>
           </h1>
           <div className="title">{config.btnTitle}</div>
         </div>
-        <form action="/" method="post" name="contact-form">
           <div className="contact-us-form">
             <div className="row">
               <div className="col-sm-12 col-md-4 form-required">

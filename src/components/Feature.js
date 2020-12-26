@@ -18,7 +18,7 @@ class FeatureComponent extends Component {
                     <div className="col-xs-12 col-sm-4 text-center" key={idx}>
                       <div className="wrapper-section wow fadeInUp animated">
                         <div className="img">
-                          <img src={img} />
+                          <img src={img} alt=""/>
                         </div>
                         <div className="content">
                           <h3>{ftitle}</h3>

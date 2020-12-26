@@ -13,7 +13,7 @@ class HeaderComponent extends Component {
             <div className="main-logo">
               <h1>
                 <Link to="/" target="_blank">
-                  <img src={logo} />
+                  <img src={logo} alt="" />
                 </Link>
               </h1>
               <div className="title-left">
@@ -27,7 +27,7 @@ class HeaderComponent extends Component {
           </div>
         </div>
         <div className="mobile-header-gh">
-          <img src={comgraphic} />
+          <img src={comgraphic} alt=""/>
         </div>
       </div>
     );

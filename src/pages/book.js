@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import FooterComponent from '../components/Footer';
 import ContactComponent from '../components/Contact';
 import Layout from '../components/Layout';
