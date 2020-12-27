@@ -4,7 +4,7 @@
   }
 
   .title-footer {
-    padding-bottom: 150px;
+    padding-bottom: 92px;
   }
 
   .contact-main {
@@ -20,6 +20,7 @@
         a {
           display: inline-block;
           max-width: 300px;
+          margin-left: -17px;
         }
       }
       .title {
@@ -189,6 +190,7 @@
 .notification {
   span {
     display: block;
+    text-align: center;
   }
   .wpcf7-submit-notification {
     background: #e7b053;
@@ -216,10 +218,9 @@
     }
   }
   .modal-title{
-    font-size: 32px;
+    font-size: 21px;
     color: #080808;
     margin-bottom: 25px;
-    padding-bottom: 15px;
     letter-spacing: 0;
     text-align: center;
   }
