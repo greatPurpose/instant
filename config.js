@@ -15,6 +15,8 @@ module.exports = {
   copyRight: 'Instant Touch™ brought to you by Instant Consult™ 2018-2021',
   bottomTitle: 'Redirecting you to our homepage',
   policyLink: 'https://instantconsult.s3.amazonaws.com/undefined/Document_2QbQFVdoc7P2xT2.pdf',
+  seo_content: 'instant touch, beautiful software, for your cosmetic clinic',
+  seo_description: 'Beautiful Software for your cosmetic clinic',
 
   // features
   features: [

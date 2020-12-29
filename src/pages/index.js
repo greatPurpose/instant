@@ -7,7 +7,7 @@ import FeatureComponent from '../components/Feature';
 
 
 const IndexPage = () => (
-  <Layout>
+  <Layout>    
     <HeaderComponent />    
     <FeatureComponent />
     <FooterComponent />
